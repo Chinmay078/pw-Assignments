@@ -1,0 +1,387 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "4da46981-f61e-4af8-af35-9e4a6ec9f321",
+   "metadata": {},
+   "source": [
+    "Q1. How do you comment code in Python? What are the different types of comments?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3ab07687-8f55-485e-8c0c-b04145165a08",
+   "metadata": {},
+   "source": [
+    "\"#\" is the symbol which is used as the comment in python\n",
+    "there are 2 types of comments:\n",
+    "1. single line:\n",
+    "    \"#\" is used here\n",
+    "2. multi-line:\n",
+    "    (\"\"\" ) triple quotes are used at the starting and ending of the comment"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "955523eb-64d6-4bbd-ac2b-b05303f27dd6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# this is the comment of single line\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a8161ae7-47ef-4a83-8a1b-9d3eb4f0685d",
+   "metadata": {},
+   "source": [
+    "''' this is the comment of \n",
+    "multiple lines '''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5412556d-d9da-47c1-9cc8-45294d5d29c8",
+   "metadata": {},
+   "source": [
+    "Q2. What are variables in Python? How do you declare and assign values to variables?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "76ccc1a7-205c-4656-9ef9-0a97a6d427cc",
+   "metadata": {},
+   "source": [
+    "variables in python are used to store and manage the data.\n",
+    "You can declare a variable by assining value. You  don't have to specify the data type of that"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "05cb686c-7f09-438f-98af-3914aadd06c2",
+   "metadata": {},
+   "source": [
+    "Q3. How do you convert one data type to another in Python?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "714292ea-8694-42bf-bffa-33638af2ad74",
+   "metadata": {},
+   "source": [
+    "there are different built-in functions in python to convert data type.like int() , float(), str() etc."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "f01c42ea-41e6-40e6-9ecd-e60e8173b8d4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# to convert int to float\n",
+    "int_n = 23\n",
+    "float_n= float(int_n)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "d989f6de-ab64-40fc-8a98-297620dbd78c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "23.0"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "float_n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "79f2d26d-f97d-4eae-8722-3c270dc0d1f9",
+   "metadata": {},
+   "source": [
+    "Q4. How do you write and execute a Python script from the command line?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "68e5c641-ad02-47d0-ad04-09a3cbc4dc51",
+   "metadata": {},
+   "source": [
+    "suppose file name of the script is pw.py\n",
+    "\n",
+    "to writ a script in python you have to create file with \".py\" extension and writ your code\n",
+    "to execute it use \" python\" command then name of the file like in this case:\n",
+    "\n",
+    "python pw.py"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "82993ad2-0f59-4ac9-9dfc-fbd6ef4c917b",
+   "metadata": {},
+   "source": [
+    "Q5. Given a list my_list = [1, 2, 3, 4, 5], write the code to slice the list and obtain the sub-list [2, 3]."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "92ccc257-e4c8-45f4-8a97-830c2abfc53c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_list = [1, 2, 3, 4, 5]\n",
+    "sub_list = my_list[1:3]\n",
+    "print(sub_list)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9c9a8828-a650-470f-ae89-c14fadd0db4c",
+   "metadata": {},
+   "source": [
+    "Q6. What is a complex number in mathematics, and how is it represented in Python?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "584fed30-1b6c-477a-a517-2cfffc9b1202",
+   "metadata": {},
+   "source": [
+    "complex number is the number which consist of real part and imaginary part .\n",
+    "In python the complex number is represented by adding \"J\" or\"j\" at imaginary part of that number\n",
+    "like: 2+5J or 2+5j"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "f82568c6-831a-45fd-b59e-770c67251542",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(2+5j)\n"
+     ]
+    }
+   ],
+   "source": [
+    "n= 2+5J\n",
+    "print(n)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6ab216d5-27d8-4130-8b78-f6c681c29d16",
+   "metadata": {},
+   "source": [
+    "Q7. What is the correct way to declare a variable named age and assign the value 25 to it?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "04333c96-b138-413a-a2f8-9e3dc658c800",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "age= 25"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "995e218f-55d0-4965-a71d-fcf84852e6a2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "25"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "age"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f28fb164-582f-47fa-a2be-86cdd83b00b8",
+   "metadata": {},
+   "source": [
+    "Q8. Declare a variable named price and assign the value 9.99 to it. What data type does this variable\n",
+    "belong to?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "6c65dafa-c86a-4f6d-8d3a-21eba949dcff",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "price = 9.99"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "6542789a-28f2-42f6-863c-c83ee13feed5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "9.99"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "price"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1f82101e-c0aa-4c47-aa6a-82467a4ee9dc",
+   "metadata": {},
+   "source": [
+    "the variable belongs to float data type"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e258c512-7e21-4355-aa21-5497d20a0703",
+   "metadata": {},
+   "source": [
+    "Q9. Create a variable named name and assign your full name to it as a string. How would you print the\n",
+    "value of this variable?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "55408da9-eca9-4955-8e95-0bd4a607e2ee",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Chinmay Kiran Kapadi\n"
+     ]
+    }
+   ],
+   "source": [
+    "name = \"Chinmay Kiran Kapadi\"\n",
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a7ab4e69-0781-4d01-bdc2-d7b1dc6ceba9",
+   "metadata": {},
+   "source": [
+    "Q10. Given the string \"Hello, World!\", extract the substring \"World\"."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "63eac940-737c-474f-a90f-fa23063e2f55",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "World\n"
+     ]
+    }
+   ],
+   "source": [
+    "s=\"Hello, World!\"\n",
+    "print(s[7:12])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "14ffda04-6dda-45a7-b529-5121c67668bf",
+   "metadata": {},
+   "source": [
+    "Q11. Create a variable named \"is_student\" and assign it a boolean value indicating whether you are\n",
+    "currently a student or not."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "eb6e9c5e-4319-4e71-a538-c684b9324a32",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "is_student = True\n",
+    "# as i'm student"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d95619f2-33bf-41b6-b6e3-87a0d3a710db",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
